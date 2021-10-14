@@ -1,0 +1,51 @@
+.profile {
+    .content {
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .profile-img {
+        max-width: 200px;
+    }
+    .follow-button {
+        max-width: 200px;
+        width: 100%;
+    }
+    .like {
+        margin-right: 0.4rem;
+        cursor: pointer;
+    }
+    .liked {
+        color: $highlight;
+        margin-right: 0.4rem;
+        cursor: pointer;
+    }
+    transition: 0.4s ease-in-out;
+    &:hover {
+        // box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.3);
+        transition: 0.4s ease-in-out;
+    }
+    img {
+        border-radius: 0.4rem;
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+        transition: 2s ease-in-out;
+    }
+    .center-md {
+        text-align: start;
+        @media only screen and (max-width: 767px) {
+            text-align: center;
+        }
+    }
+}
+.user-posts {
+    img {
+        border-radius: 0.4rem;
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+        transition: 2s ease-in-out;
+        // border: 1px solid #cecece;
+    }
+    .border {
+        border: 1px solid #aeaeae;
+        border-radius: 0.4rem;
+    }
+}

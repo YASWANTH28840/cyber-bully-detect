@@ -1,0 +1,60 @@
+.auth {
+    margin: 4em;
+    margin-left: 12vw !important;
+    margin-right: 12vw !important;
+    .imgCard {
+        border-top-left-radius: 0.25rem;
+        border-bottom-left-radius: 0.25rem;
+    }
+    .form {
+        border: 0.05em solid $secondary;
+        border-radius: 0.5rem;
+        background-color: $light-primary;
+        padding: 3em;
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: $text-alt;
+        h2,
+        h5,
+        h6 {
+            color: $secondary;
+        }
+        input {
+            background-color: rgba($secondary, 0.1);
+            color: $secondary;
+            border-color: rgba($secondary, 0.2);
+            &:focus {
+                background-color: rgba($secondary, 0.1);
+                color: $secondary;
+            }
+            &::placeholder {
+                // color: $light-gray;
+            }
+        }
+        a {
+            color: $primary;
+        }
+        @media only screen and (max-width: 767px) {
+            padding: 1.3em;
+        }
+        button {
+            @media only screen and (max-width: 767px) {
+                width: 100%;
+            }
+        }
+        .input-group-text {
+            color: $white;
+            background-color: $highlight;
+            border: 0px;
+        }
+    }
+    @media only screen and (max-width: 767px) {
+        margin: 3em;
+        margin-left: 7vw !important;
+        margin-right: 7vw !important;
+    }
+}

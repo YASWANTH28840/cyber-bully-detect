@@ -1,0 +1,126 @@
+.img-fluid-card {
+    width: 100% !important;
+}
+.job-form {
+    border-radius: 0.5rem;
+    box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.3);
+    .job-title {
+        padding: 0 0.25rem;
+        h6 {
+            margin: 0;
+        }
+    }
+}
+.card {
+    .new-comment {
+        font-size: 0.8rem;
+        strong {
+            white-space: nowrap;
+        }
+    }
+    #comment {
+        font-size: 0.8rem;
+    }
+    #comment::placeholder {
+        font-size: 0.8rem;
+    }
+    .content {
+        height: fit-content;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    .like {
+        margin-right: 0.4rem;
+        cursor: pointer;
+    }
+    .liked {
+        color: $highlight;
+        margin-right: 0.4rem;
+        cursor: pointer;
+    }
+    transition: 0.4s ease-in-out;
+    &:hover {
+        box-shadow: 4px 6px 6px rgba(0, 0, 0, 0.3);
+        transition: 0.4s ease-in-out;
+    }
+    img {
+        border-radius: 0.4rem;
+        box-shadow: 0px 0px 20px rgba(255, 255, 255, 0.7);
+        transition: 2s ease-in-out;
+    }
+}
+
+.modal.job {
+    margin-top: 20vh;
+}
+
+.hs {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(6, calc(50% - 40px));
+    grid-template-rows: minmax(150px, 1fr);
+    overflow-x: scroll;
+}
+
+.item {
+    scroll-snap-align: center;
+}
+
+.badge-gray {
+    background-color: $gray !important;
+    color: white !important;
+}
+
+.cross {
+    margin-left: 0.1rem;
+    &:hover {
+        cursor: pointer;
+        color: $red;
+    }
+}
+
+.selectable {
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    font-size: 0.8rem !important;
+    margin-bottom: 0.35em;
+    border-radius: 99em !important;
+}
+
+.clear {
+    border-radius: 99em !important;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+    &:hover {
+        background-color: $secondary !important;
+        transition: 0.2s ease-in-out;
+    }
+    &::before {
+        opacity: 0;
+        left: -20px;
+        -webkit-transition: all 0.5s;
+        transition: all 0.5s;
+    }
+    &:hover::before {
+        content: "CLEAR ";
+        opacity: 1;
+        left: 0px;
+        transition: 0.5s ease-in-out;
+    }
+}
+.smooth-image {
+    transition: opacity 1s;
+}
+.image-visible {
+    opacity: 1;
+}
+.image-hidden {
+    opacity: 0;
+    display: none;
+}
+.likes {
+    .list-group-item {
+        padding: 0.5rem 1rem;
+        padding-left: 0;
+    }
+}

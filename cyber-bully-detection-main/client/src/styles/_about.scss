@@ -1,0 +1,11 @@
+.abt-card {
+    background-color: white;
+    padding: 2rem 4rem;
+    margin: 1rem 20vw;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    border-radius: 0.5rem;
+    @media only screen and (max-width: 992px) {
+        padding: 1.8em;
+        margin: 1rem 2rem;
+    }
+}

@@ -1,0 +1,26 @@
+footer {
+    display: flex !important;
+    padding: 1em;
+    flex-direction: row;
+    background-color: $primary;
+    color: $white;
+    h5,
+    h6 {
+        color: white;
+    }
+    .header-line {
+        height: 0.1em;
+    }
+    .icons .social {
+        font-size: 2rem;
+        margin-left: 0.5rem;
+        margin-right: 0.5rem;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        color: $white;
+        &:hover {
+            color: $secondary;
+        }
+    }
+}

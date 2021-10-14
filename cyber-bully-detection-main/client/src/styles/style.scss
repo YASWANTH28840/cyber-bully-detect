@@ -1,0 +1,121 @@
+@import "./variables";
+@import "./job";
+@import "./worker";
+@import "./loader";
+@import "./bgPattern";
+@import "./navbar";
+@import "./footer";
+@import "./home";
+@import "./about";
+@import "./auth";
+@import "./profile";
+#root {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main {
+    flex: 1;
+}
+.bg-lightbg {
+    background-color: $light-bg;
+}
+.row {
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+}
+
+.text-align-center {
+    text-align: center;
+}
+.text-align-justify {
+    text-align: justify;
+}
+
+.text-align-end {
+    text-align: end;
+}
+
+.position-sticky {
+    top: 0;
+}
+
+.bg-light-gray {
+    background-color: $light-gray;
+}
+
+.text-white {
+    color: $white !important;
+}
+a {
+    // &:hover {
+    //     color: $secondary !important;
+    //     text-decoration: underline;
+    //     cursor: pointer;
+    // }
+}
+.link {
+    cursor: pointer;
+    color: $primary;
+    &:hover {
+        color: $secondary !important;
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+a {
+    color: $secondary;
+
+    &:hover {
+        color: $secondary;
+    }
+}
+.btn.btn-primary {
+    background-color: $primary;
+    &:hover,
+    &:active,
+    &:focus {
+        background-color: rgba($primary, 0.9) !important;
+    }
+}
+.myClassName__control {
+    height: 40px;
+}
+
+.error-img {
+    width: 100%;
+    height: auto;
+    max-width: 8em;
+    margin: 2em;
+}
+.error-modal {
+    display: flex !important;
+    justify-content: center;
+    top: 30% !important;
+}
+
+.btn-float {
+    position: absolute;
+}
+.flex-row-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.thumbnail {
+    padding: 0.25rem;
+    background-color: #fff;
+    border: 1px solid #cccccc;
+    border-radius: 1em;
+}
+.unauth {
+    pointer-events: none;
+}
+.vertical-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.photu {
+    max-width: 500px !important;
+}
